@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Back to the “global village”, with an AI helper</title>
+  <meta name="description" content="Imagine a world without wallets, where they have been replaced by a memory of deeds and a reputation system run by your personal AI.">
+  <meta property="og:title" content="Back to the “global village”, with an AI helper">
+  <meta property="og:description" content="Imagine a world without wallets, where they have been replaced by a memory of deeds.">
+  <meta property="og:type" content="article">
+  <link rel="alternate" hreflang="cs" href="cz-%C3%BAvod.html">
+  <link rel="alternate" hreflang="en" href="en-intro.html">
+  <link rel="alternate" hreflang="zh-CN" href="cn-intro.html">
+  <style>
+    :root {
+      --bg: #fafafa;
+      --surface: #ffffff;
+      --text: #1a1a1a;
+      --text-muted: #555555;
+      --border: #e2e8f0;
+      --accent: #2563eb;
+      --quote-bg: #f8fafc;
+      --quote-border: #3b82f6;
+      --card-bg: #f1f5f9;
+      --tag-bg: #e0e7ff;
+      --tag-text: #3730a3;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --surface: #1e293b;
+        --text: #f1f5f9;
+        --text-muted: #94a3b8;
+        --border: #334155;
+        --accent: #60a5fa;
+        --quote-bg: #1e293b;
+        --quote-border: #60a5fa;
+        --card-bg: #1e293b;
+        --tag-bg: #312e81;
+        --tag-text: #c7d2fe;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      font-size: 1.125rem;
+      padding: 3rem 1.25rem 5rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    article {
+      max-width: 680px;
+      margin: 0 auto;
+      background: var(--surface);
+      padding: 2.75rem 2.5rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 1rem 0.5rem 3rem;
+      }
+      article {
+        padding: 1.75rem 1.25rem;
+        border-radius: 12px;
+      }
+    }
+
+    .badge {
+      display: none;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      margin-bottom: 1.25rem;
+    }
+
+    h1 {
+      font-size: 2.15rem;
+      font-weight: 800;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      line-height: 1.45;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+
+    strong {
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .section-lead {
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    ul {
+      list-style: none;
+      margin: 1.25rem 0 1.75rem;
+      padding-left: 0;
+    }
+
+    li {
+      position: relative;
+      padding-left: 1.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    blockquote {
+      background: var(--quote-bg);
+      border-left: 4px solid var(--quote-border);
+      border-radius: 0 12px 12px 0;
+      padding: 1.25rem 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      color: var(--text);
+      box-shadow: inset 0 0 0 1px var(--border);
+    }
+
+    blockquote p:last-child {
+      margin-bottom: 0;
+    }
+
+    .outcome-box {
+      margin-top: 2.5rem;
+      padding: 1.5rem;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .outcome-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    footer {
+      max-width: 680px;
+      margin: 2rem auto 0;
+      text-align: center;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <article>
+    <h1>Back to the “global village”, with an&nbsp;AI helper</h1>
+    <div class="subtitle">
+      Imagine a society that isn’t run by wallets. In their place: a memory of what people have done.
+    </div>
+
+    <p>
+      <strong>The old problem:</strong> Back when people lived in small villages of about 50, they didn’t need money. When the blacksmith fixed the baker’s roof, the baker <em>remembered</em>. Later, when the blacksmith needed bread, he got it, because the baker knew: <em>“This one is useful, we owe each other.”</em> It all ran on <strong>trust and reputation</strong>.
+    </p>
+
+    <p>
+      But once we started trading with strangers on the other side of the world, that system broke down. Nobody can remember the good deeds of a million people. So we invented <strong>money</strong>. Money is really just “liquid trust”. It is anonymous proof that at some point you did something useful, which is why you can buy a bread roll today without the shop assistant knowing who you are.
+    </p>
+
+    <p>
+      <strong>The problem with money:</strong> Money is “dumb”. It doesn’t remember <em>whether</em> you got it through honest work, theft or an inheritance. It wipes out all the context. All that’s left is a number.
+    </p>
+
+    <p>
+      <strong>A new solution (a shared attribution graph):</strong> The idea is to use technology to go back to that “village” system, but at global scale. Instead of sending each other money, the system would remember <strong>who did what, and for whom</strong>. Picture a giant digital web of gratitude and credit:
+    </p>
+
+    <ul>
+      <li><em>You write a great article → the system records that it helped a thousand people.</em></li>
+      <li><em>You help your neighbour move house → the system records a link of mutual help.</em></li>
+    </ul>
+
+    <p>
+      <strong>The role of personal AI (taking away the mental load):</strong> You object: <em>“That’s crazy. I can’t track a billion transactions and judge whether someone is a good person just to sell them a coffee!”</em>
+    </p>
+
+    <p>
+      And that is exactly where <strong>personal AI</strong> comes in. Your personal AI assistant works like the best-informed gossip in the village. It knows everyone. When a stranger comes to you asking for something, your AI checks this “digital web” in a split second and whispers in your earpiece:
+    </p>
+
+    <blockquote>
+      <p>
+        “You can trust this person. They don’t have any ‘money’, but last week they helped build a school and their community thinks highly of them. Give them the coffee. The system will record that you helped someone useful, and your reputation goes up too.”
+      </p>
+    </blockquote>
+
+    <div class="outcome-box">
+      <p>
+        <strong>The result:</strong> An economy that isn’t built on piling up numbers in an account (which rewards greed), but on <strong>provable benefit to others</strong>. There’s no need to convert everything into dollars or euros any more, because the AI does the hard sum of <em>“who deserves what”</em> for us.
+      </p>
+    </div>
+  </article>
+
+  <footer>
+    <a href="cz-%C3%BAvod.html" hreflang="cs">Česky</a> · <a href="en-intro.html" hreflang="en">English</a> · <a href="cn-intro.html" hreflang="zh-CN">中文</a>
+  </footer>
+
+</body>
+</html>

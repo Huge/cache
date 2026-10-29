@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>带着 AI 助手，回到“地球村”</title>
+  <meta name="description" content="想象一个没有钱包的世界：取而代之的，是对每个人所作所为的记忆，以及由个人 AI 管理的声誉系统。">
+  <meta property="og:title" content="带着 AI 助手，回到“地球村”">
+  <meta property="og:description" content="想象一个没有钱包的世界：取而代之的，是对每个人所作所为的记忆。">
+  <meta property="og:type" content="article">
+  <link rel="alternate" hreflang="cs" href="cz-%C3%BAvod.html">
+  <link rel="alternate" hreflang="en" href="en-intro.html">
+  <link rel="alternate" hreflang="zh-CN" href="cn-intro.html">
+  <style>
+    :root {
+      --bg: #fafafa;
+      --surface: #ffffff;
+      --text: #1a1a1a;
+      --text-muted: #555555;
+      --border: #e2e8f0;
+      --accent: #2563eb;
+      --quote-bg: #f8fafc;
+      --quote-border: #3b82f6;
+      --card-bg: #f1f5f9;
+      --tag-bg: #e0e7ff;
+      --tag-text: #3730a3;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --surface: #1e293b;
+        --text: #f1f5f9;
+        --text-muted: #94a3b8;
+        --border: #334155;
+        --accent: #60a5fa;
+        --quote-bg: #1e293b;
+        --quote-border: #60a5fa;
+        --card-bg: #1e293b;
+        --tag-bg: #312e81;
+        --tag-text: #c7d2fe;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      font-size: 1.125rem;
+      padding: 3rem 1.25rem 5rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    article {
+      max-width: 680px;
+      margin: 0 auto;
+      background: var(--surface);
+      padding: 2.75rem 2.5rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 1rem 0.5rem 3rem;
+      }
+      article {
+        padding: 1.75rem 1.25rem;
+        border-radius: 12px;
+      }
+    }
+
+    .badge {
+      display: none;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      margin-bottom: 1.25rem;
+    }
+
+    h1 {
+      font-size: 2.15rem;
+      font-weight: 800;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      line-height: 1.45;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+
+    strong {
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .section-lead {
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    ul {
+      list-style: none;
+      margin: 1.25rem 0 1.75rem;
+      padding-left: 0;
+    }
+
+    li {
+      position: relative;
+      padding-left: 1.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    blockquote {
+      background: var(--quote-bg);
+      border-left: 4px solid var(--quote-border);
+      border-radius: 0 12px 12px 0;
+      padding: 1.25rem 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      color: var(--text);
+      box-shadow: inset 0 0 0 1px var(--border);
+    }
+
+    blockquote p:last-child {
+      margin-bottom: 0;
+    }
+
+    .outcome-box {
+      margin-top: 2.5rem;
+      padding: 1.5rem;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .outcome-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    footer {
+      max-width: 680px;
+      margin: 2rem auto 0;
+      text-align: center;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", "Noto Sans CJK SC", sans-serif;
+      line-height: 1.85;
+    }
+
+    h1 {
+      letter-spacing: 0;
+    }
+
+    /* CJK has no real italics; browsers only slant the glyphs. */
+    em, blockquote {
+      font-style: normal;
+    }
+
+    em {
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <article>
+    <h1>带着 AI 助手，回到“地球村”</h1>
+    <div class="subtitle">
+      想象一个不再由钱包主导的社会：取而代之的，是对每个人所作所为的记忆。
+    </div>
+
+    <p>
+      <strong>老问题：</strong>过去，人们生活在只有五十来人的小村子里，并不需要钱。铁匠帮面包师修好了屋顶，面包师会<em>记住</em>这件事。等铁匠需要面包时，他就能拿到，因为面包师心里清楚：<em>“这个人有用，我们互相欠着情。”</em>整个村子靠的是<strong>信任和声誉</strong>。
+    </p>
+
+    <p>
+      可是，一旦我们开始和地球另一端的陌生人做生意，这套办法就失灵了。没有人能记住一百万个人的功劳。于是我们发明了<strong>钱</strong>。钱其实就是“液化的信任”：它是一份匿名的凭证，证明你过去某个时候做过有用的事，所以今天你可以买一个面包，而店员不需要知道你是谁。
+    </p>
+
+    <p>
+      <strong>钱的问题：</strong>但钱是“笨”的。它不记得你是靠诚实劳动、偷窃还是继承<em>得来</em>的。所有来龙去脉都被抹掉了，只剩下一个数字。
+    </p>
+
+    <p>
+      <strong>新的办法（共享的贡献图谱）：</strong>设想借助技术回到这种“村子式”的体系，只不过规模是全球的。我们不再互相转账，而是由系统记住<strong>谁为谁做了什么</strong>。可以把它想象成一张由感谢和功劳编织成的巨大数字网：
+    </p>
+
+    <ul>
+      <li><em>你写了一篇好文章 → 系统记下它帮助了一千个人。</em></li>
+      <li><em>你帮邻居搬家 → 系统记下你们之间互相帮助的联系。</em></li>
+    </ul>
+
+    <p>
+      <strong>个人 AI 的作用（替你承担思考的负担）：</strong>你可能会反驳：<em>“这太疯狂了！我总不能为了卖一杯咖啡，就去翻十亿条记录，判断对方是不是好人吧！”</em>
+    </p>
+
+    <p>
+      这正是<strong>个人 AI</strong> 派上用场的地方。你的 AI 助手就像村里消息最灵通的人，谁的事它都知道。当一个陌生人来找你帮忙时，你的 AI 会在一瞬间查看这张“数字网”，然后在你耳机里轻声说：
+    </p>
+
+    <blockquote>
+      <p>
+        “这个人可以信任。他虽然没有‘钱’，但上周帮忙盖了一所学校，他的社区很敬重他。把咖啡给他吧，系统会记下你帮助了一个有用的人，你的声誉也会随之提高。”
+      </p>
+    </blockquote>
+
+    <div class="outcome-box">
+      <p>
+        <strong>结果：</strong>一种新的经济由此出现。它不建立在账户里不断累积的数字上（那只会助长贪婪），而是建立在<strong>可以证实的、对他人的贡献</strong>上。我们不必再把一切都折算成钱，因为<em>“谁应该得到什么”</em>这道复杂的换算题，AI 会替我们完成。
+      </p>
+    </div>
+  </article>
+
+  <footer>
+    <a href="cz-%C3%BAvod.html" hreflang="cs">Česky</a> · <a href="en-intro.html" hreflang="en">English</a> · <a href="cn-intro.html" hreflang="zh-CN">中文</a>
+  </footer>
+
+</body>
+</html>
