@@ -3,6 +3,8 @@
 import html, os, subprocess, sys, urllib.parse
 
 root = sys.argv[1] if len(sys.argv) > 1 else "."
+repo = os.environ.get("GITHUB_REPOSITORY", "Huge/cache")
+branch = os.environ.get("GITHUB_REF_NAME", "master")
 
 # Last commit date per file, from a single git log pass (newest first).
 dates = {}
@@ -33,7 +35,9 @@ for d, dirs, files in os.walk(root):
     lines = "\n".join(
         f'{date:10}  {size:>{w}}  <a href="{urllib.parse.quote(name)}">{html.escape(name)}</a>'
         for name, size, date in rows)
+    src = f"https://github.com/{repo}/tree/{branch}" + ("" if rel == "." else "/" + urllib.parse.quote(rel))
     with open(os.path.join(d, "index.html"), "w") as out:
         out.write(f'<!doctype html><meta charset="utf-8"><meta name="viewport" '
                   f'content="width=device-width"><title>{html.escape(title)}</title>'
-                  f'<h1>{html.escape(title)}</h1><pre>\n{lines}\n</pre>\n')
+                  f'<h1>{html.escape(title)}</h1><pre>\n{lines}\n</pre>\n'
+                  f'<hr><footer><a href="{src}">{repo} on GitHub</a></footer>\n')
