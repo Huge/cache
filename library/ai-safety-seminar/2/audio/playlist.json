@@ -1,0 +1,80 @@
+{
+  "full_track": {
+    "file": "audio/track-0-full-seminar.mp3",
+    "duration": 3614.04,
+    "duration_formatted": "60:14",
+    "size_bytes": 28912320
+  },
+  "tracks": [
+    {
+      "id": 1,
+      "slug": "01-introduction",
+      "title": "Introduction & Reading List",
+      "anchor": "the-reading-list",
+      "duration": 210.864,
+      "duration_formatted": "3:30",
+      "file": "audio/01-introduction.mp3",
+      "size_bytes": 1686912
+    },
+    {
+      "id": 2,
+      "slug": "02-the-incident",
+      "title": "Part I \u2014 The Incident in Two Pages",
+      "anchor": "part-i-the-incident-in-two-pages",
+      "duration": 222.936,
+      "duration_formatted": "3:42",
+      "file": "audio/02-the-incident.mp3",
+      "size_bytes": 1783488
+    },
+    {
+      "id": 3,
+      "slug": "03-concepts",
+      "title": "Part II \u2014 Concepts",
+      "anchor": "part-ii-concepts",
+      "duration": 374.064,
+      "duration_formatted": "6:14",
+      "file": "audio/03-concepts.mp3",
+      "size_bytes": 2992512
+    },
+    {
+      "id": 4,
+      "slug": "04-feeding-ai-good-data",
+      "title": "Part III \u2014 Feeding AI Good Data",
+      "anchor": "part-iii-feeding-ai-good-data",
+      "duration": 707.688,
+      "duration_formatted": "11:47",
+      "file": "audio/04-feeding-ai-good-data.mp3",
+      "size_bytes": 5661504
+    },
+    {
+      "id": 5,
+      "slug": "05-teaching-ai-right-from-wrong",
+      "title": "Part IV \u2014 Teaching AI Right from Wrong",
+      "anchor": "part-iv-teaching-ai-right-from-wrong",
+      "duration": 506.28,
+      "duration_formatted": "8:26",
+      "file": "audio/05-teaching-ai-right-from-wrong.mp3",
+      "size_bytes": 4050240
+    },
+    {
+      "id": 6,
+      "slug": "06-more-safety-techniques",
+      "title": "Part V \u2014 More Safety Techniques",
+      "anchor": "part-v-more-safety-techniques",
+      "duration": 578.952,
+      "duration_formatted": "9:38",
+      "file": "audio/06-more-safety-techniques.mp3",
+      "size_bytes": 4631616
+    },
+    {
+      "id": 7,
+      "slug": "07-synthesis",
+      "title": "Part VI \u2014 Synthesis",
+      "anchor": "part-vi-synthesis",
+      "duration": 1013.256,
+      "duration_formatted": "16:53",
+      "file": "audio/07-synthesis.mp3",
+      "size_bytes": 8106048
+    }
+  ]
+}
